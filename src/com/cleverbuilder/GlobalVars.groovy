@@ -1,11 +1,11 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
-
-class GlobalVars {
-   static String foo = "bar"
-
-   // refer to this in a pipeline using:
-   //
-   // import com.cleverbuilder.GlobalVars
-   // println GlobalVars.foo
+def build() {
+ echo 'Hi Mahesh'
 }
+def test(name) {
+  echo 'Hi Mahesh${name}'
+}
+
+// AimTheory have a recommendation and explanation about this here
+return this
